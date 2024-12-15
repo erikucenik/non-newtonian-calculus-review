@@ -1,6 +1,6 @@
 \section{Guía útil-pero-opcional para la lectura de este Libro.}
 
-Si uno solo desea extraer el grueso de este libro sin tratarlo como un puzle o una historia intrigante, la siguiente guía puede resultar útil. Leer esto antes de empezar el primer capítulo permitirá al lector avanzar rápidamente por la primera mitad del libro.
+Si uno solo desea extraer el grueso de este libro sin tratarlo como un puzle o una historia intrigante, la siguiente guía puede resultar conveniente. Leer esto antes de empezar el primer capítulo permitirá al lector avanzar rápidamente por la primera mitad del libro.
 
 \subsection{Procedimiento general.}
 
@@ -26,7 +26,7 @@ Con esto en mano, podemos relacionar algunas de estas cantidades por medio de lo
 		\end{enumerate}
 	\item Definimos la expresión anterior de $h(s)$ sin el término $h(r)$ como la \textit{integral} de la función ($\int_r^s f$).
 	\item El Primera Teorema Fundamental. Si $g(x) = \int_r^x f$, entonces $Dg = f$.
-	\item El Segundo Teorema Fundamental. $int_r^s (Dh) = \textrm{algo}$.
+	\item El Segundo Teorema Fundamental. $\int_r^s (Dh) = \textrm{algo}$.
 \end{enumerate}
 
 Esta cantidad de información puede resultar abrumadora, pero después de leer el Capítulo 1 y el Capítulo 2, uno observará que encajan en este esquema como oro fundido en un molde.
@@ -67,14 +67,14 @@ Esta tabla resume casi todo lo que se dice en los primeros cuatro capítulos. Al
 
 \subsection{Propiedades comunes a todos los Cálculus.}
 
-Nota: solo nos referimos a las variantes \enquote{clásicas} cuando así especificado (si se habla de cálculo anageométrico, considérese \enquote{pendiente} como sinónimo de \enquote{pendiente anageométrica}).
+Nota: solo nos referimos a las variantes \enquote{clásicas} cuando así especificado (si se habla de Cálculo Anageométrico, considérese \enquote{pendiente} como sinónimo de \enquote{pendiente anageométrica}).
 
 \begin{itemize}
 	\item La derivada de una función uniforme es constante e igual a su pendiente.
 	\item La derivada de $f$ coincide con la pendiente de la única función uniforme que es clásicamente tangente a la función en el punto $(a, f(a))$.
 	\item La media de $f(x) = b$ con $b$ constante sobre un intervalo $[r, s]$ es $b$.
 	\item Las integrales son sumas ponderadas.
-	\item Si $f(x) \le g(x) \forall x \in [r, s]$, la media y la integral de $f$ de $r$ hasta $s$ será menor o igual a la media y la integral de $g$ de $r$ hasta $s$.
+	\item Si $f(x) \le g(x) \forall x \in [r, s]$, la media y la integral de $f$ de $r$ hasta $s$ será menor o igual a la media y la integral de $g$ de $r$ hasta $s$, respectivamente.
 	\item Por cada teorema en un Cálculo, existe un teorema análogo en Cálculos hermanos.
 \end{itemize}
 
@@ -103,10 +103,10 @@ Nota: solo nos referimos a las variantes \enquote{clásicas} cuando así especif
 Si $Df = f$:
 
 \begin{itemize}
-	\item Clásico: $e^x$.
-	\item Geométrico: $f = e^{e^x}$.
-	\item Anageométrico: $f = mx$.
-	\item Bigeométrico: $f = e^x$.
+	\item Clásico: $f(x) = e^x$.
+	\item Geométrico: $f(x) = e^{e^x}$.
+	\item Anageométrico: $f(x) = mx$.
+	\item Bigeométrico: $f(x) = e^x$.
 \end{itemize}
 
 La integral de $f(x) = b$ con $b$ constante sobre un intervalo $[r, s]$ es:
@@ -130,14 +130,14 @@ La integral de $f(x) = b$ con $b$ constante sobre un intervalo $[r, s]$ es:
 Otras propiedades:
 
 \begin{itemize}
-	\item Anageométrico: una función uniforme dibujada sobre un gráfico donde el eje $x$ está en escala logarítmica muestra una línea recta cuya pendiente clásica es la pendiente anageométrica de la función.
-	\item Bigeométrico: una función uniforme dibujada sobre un gráfico donde ambos ejes están en escala logarítmica muestra una línea recta cuya pendiente clásica es el $\ln$ de la pendiente anageométrica de la función.
+	\item En el Cálculo Anageométrico, una función uniforme dibujada sobre un gráfico donde el eje $x$ está en escala logarítmica muestra una línea recta cuya pendiente clásica es la pendiente anageométrica de la función.
+	\item En el Cálculo Bigeométrico, una función uniforme dibujada sobre un gráfico donde ambos ejes están en escala logarítmica muestra una línea recta cuya pendiente clásica es el $\ln$ de la pendiente anageométrica de la función.
 	\item El Cálculo Geométrico trabaja con funciones con valores positivos, el Cálculo Anageométrico trabaja con funciones con argumentos positivos, y el Cálculo Bigeométrico trabaja con funciones con argumentos y valores positivos. Se hace una excepción para $\ln$.
 \end{itemize}
 
 \subsection{Relaciones con el Cálculo Clásico.}
 
-Geométrico:
+Cálculo Geométrico:
 
 \begin{itemize}
 	\item $\tilde{G_r^s}f = \exp(G_r^s \bar{f})$.
@@ -148,7 +148,7 @@ Geométrico:
 
 Donde $\bar{f}(x) = \ln(f(x))$.
 
-Anageométrico:
+Cálculo Anageométrico:
 
 \begin{itemize}
 	\item $\underaccent{\tilde}{G}_r^s f = G_{\bar{r}}^{\bar{s}} \bar{f}$.
@@ -159,7 +159,7 @@ Anageométrico:
 
 Donde $\bar{f} = f(e^x)$, $\bar{r} = \ln(r)$, $\bar{s} = \ln(s)$ y $\bar{a} = \ln(a)$.
 
-Bigeométrico:
+Cálculo Bigeométrico:
 
 \begin{itemize}
 	\item $\tilde{\underaccent{\tilde}{G}}_r^s f = \exp(G_{\bar{r}}^{\bar{s}} \bar{f})$.
@@ -190,10 +190,12 @@ Sea $\alpha$ un generador (función inyectiva $\alpha: \mathbb{R} \to A$ donde $
 
 (Donde $\dot{*}$ es la operación de la $\alpha$-aritmética y $*$ es la operación de la aritmética clásica. Nótese que la aritmética clásica no es más que una aritmética elegida arbitrariamente).
 
-Hay infinitos CUCs, todos ellos isomórficos. La relación entre aritméticas y generadores es biyectiva. Algunos ejemplos son la aritmética clásica ($\alpha(x) = x$) y la aritmética geométrica ($\alpha(x) = \exp(x)$).
+Hay infinitos CUCs, todos ellos isomorfos. La relación entre aritméticas y generadores es biyectiva. Algunos ejemplos son la aritmética clásica ($\alpha(x) = x$) y la aritmética geométrica ($\alpha(x) = \exp(x)$).
 
 \subsubsection{Construyendo la $\alpha$-aritmética y el $*$-cálculo.}
 
 Todos los conceptos se definen de la misma manera que en aritmética clásica, pero usando los $\alpha$-operadores y el $\alpha$-orden en su lugar. La Seccón 5.3 del libro detalla esta explicación y se ofrece un ejemplo particular en la Sección 5.4.
 
 Finalmente, en el Capítulo 6 se da la última generalización de un Cálculo. Se presenta como un par ordenado de aritméticas que pueden ser usadas para definir todos los conceptos vistos hasta el momento. Aquí es donde todo se pone en su sitio, y el lector puede decir \enquote{¡Ajá!}. No entraremos en más detalle en este artículo, pues no deseamos faltar al respeto ni ser redundantes con el libro.
+
+\newpage
