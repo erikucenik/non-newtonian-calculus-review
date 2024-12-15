@@ -10,7 +10,7 @@ First, we define a series of ways to describe how a function varies and behaves.
 	\item We define a notion of \textit{change}, both for function arguments ($\Delta_r^s x$) and for function values ($\Delta_r^s f$).
 	\item We find a set of functions which, for all intervals $[r, s]$ where $s - r = 1$, have the same change. We call them \textit{uniform} functions.
 	\item We find those functions' \textit{slope}, that is, their change on an interval of extent 1.
-	\item We define the \textit{gradient} of a function ($G_r^s f$) to be the slope of the uniform function containing the points $(r, f(r))$ and $(s, f(s))$ (for the interval $[r, s]$).
+	\item We define the \textit{gradient} of a function ($G_r^s f$) to be the slope of the uniform function containing the points $(r, f(r))$ and $(s, f(s))$.
 	\item We define the \textit{derivative} of a function to be $Df = \lim\limits_{s \to r} G_r^s f$.
 	\item We define the \textit{average} of a function ($M_r^s f$).
 \end{enumerate}
@@ -24,7 +24,7 @@ With this in hand, we can relate some of these quantities by the following theor
 			\item First we substitute in the Basic Theorem.
 			\item Then we solve for $h(s)$.
 		\end{enumerate}
-	\item We define the previous expression for $h(s)$ without the $h(r)$ term to be the function's integral ($\int_r^s f$).
+	\item We define the previous expression for $h(s)$ without the $h(r)$ term to be the function's \textit{integral} ($\int_r^s f$).
 	\item The First Fundamental Theorem. If $g(x) = \int_r^x f$, then $Dg = f$.
 	\item The Second Fundamental Theorem. $\int_r^s (Dh) = \textrm{something}$.
 \end{enumerate}
@@ -67,7 +67,7 @@ This table summarizes almost all of what's said in the first four chapters. Some
 
 \subsection{Properties common to All Calculi.}
 
-Note: we only mean \enquote{classical} when explicitly saying so (if talking about anageometric calculus, consider \enquote{slope} to mean \enquote{anageometric slope}).
+Note: we only mean \enquote{classical} when explicitly saying so (if talking about Anageometric Calculus, consider \enquote{slope} to mean \enquote{anageometric slope}).
 
 \begin{itemize}
 	\item The derivative of a uniform function is a constant equal to its slope.
@@ -86,7 +86,7 @@ Note: we only mean \enquote{classical} when explicitly saying so (if talking abo
 	\item $\int_r^s$, $D$ and $M_r^s$ are additive and homogenous ($f(a + b) = f(a) + f(b)$ and $f(c\cdot a) = c\cdot f(a)$).
 	\item The derivative of a constant is $0$.
 	\item $\int_r^r f = 0$.
-	\item Integral "joining": $\int_r^s f + \int_s^t f = \int_r^t f$.
+	\item Integral \enquote{joining}: $\int_r^s f + \int_s^t f = \int_r^t f$.
 \end{itemize}
 
 \subsection{Properties common to Geometric and Bigeometric Calculus.}
@@ -95,7 +95,7 @@ Note: we only mean \enquote{classical} when explicitly saying so (if talking abo
 	\item $\int_r^s$, $D$ and $M_r^s$ are multiplicative and \enquote{exponentiative} ($h(f\cdot g) = h(f)\cdot h(g)$ and $h(f^a) = h(f)^a$).
 	\item The derivative of a constant is $1$.
 	\item $\int_r^r f = 1$.
-	\item Integral "joining": $\int_r^s f \cdot \int_s^t f = \int_r^t f$.
+	\item Integral \enquote{joining}: $\int_r^s f \cdot \int_s^t f = \int_r^t f$.
 \end{itemize}
 
 \subsection{Not shared properties.}
@@ -118,7 +118,7 @@ The integral of $f(x) = b$ with constant $b$ over an interval $[r, s]$:
 	\item Bigeometric: $b^{\ln(s) - \ln(r)}$.
 \end{itemize}
 
-Average "joining" over multiple intervals:
+Average \enquote{joining} over multiple intervals:
 
 \begin{itemize}
 	\item Classical: $M_r^s f \cdot (s - r) + M_s^t f \cdot (t - s) = M_r^t f \cdot (t - r)$.
@@ -132,7 +132,7 @@ Other properties:
 \begin{itemize}
 	\item Anageometric: a uniform function plotted on a graph where $x$ is on log-scale shows a straight line whose classical slope is the function's anageometric slope.
 	\item Bigeometric: a uniform function plotted on a graph where both axis are on log-scale shows a straight line whose classical slope is the $\ln$ of the function's bigeometric slope. 
-	\item Geometric Calculus works on functions with positive values, anageometric calculus works on functions with positive arguments, and bigeometric calculus works on functions with both positive arguments and values. An exception is made for $\ln$.
+	\item Geometric Calculus works on functions with positive values, Anageometric Calculus works on functions with positive arguments, and Bigeometric Calculus works on functions with both positive arguments and values. An exception is made for $\ln$.
 \end{itemize}
 
 \subsection{Relationship to Classical Calculus.}
@@ -191,4 +191,4 @@ There are infinitely many COFs, all of them isomorphic. The relationship between
 
 Every concept is defined in the same way as classical arithmetics, but using the $\alpha$-operators and $\alpha$-order instead. You can get this spelled out on Section 5.3 of the book and get a particular example in Section 5.4.
 
-Finally, on Chapter 6 the final generalization of a Calculus is given. It is presented as an ordered pair of arithmetics which can be used to define all of the concepts seen thus far. This is where everything comes into place, and the reader can go \enquote{A-ha!}. We won't go into further detail in this article, as we do not wish to be neither disrespectful nor redundant to the book.
+Lastly, on Chapter 6 the final generalization of a Calculus is given. It is presented as an ordered pair of arithmetics which can be used to define all of the concepts seen thus far. This is where everything comes into place, and the reader can go \enquote{A-ha!}. We won't go into further detail in this article, as we do not wish to be neither disrespectful nor redundant to the book.
