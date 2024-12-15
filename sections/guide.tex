@@ -178,10 +178,15 @@ Un cuerpo ordenado completo (CUC) sobre un conjunto $A$ es la n-upla $(A, +, -, 
 
 Sea $\alpha$ un generador (función inyectiva $\alpha: \mathbb{R} \to A$ donde $A \subset \mathbb{R}$). Una $\alpha$-aritmética es aquélla cuyo conjunto es $A$ y que define sus operaciones como:
 
+\newcommand{\lessdot}{\shorthandoff{<}\dot{<}\shorthandon{<}}
+
+% Fix for the \dot{<} sign.
+\begin{otherlanguage}{english}
 \begin{itemize}
 	\item $\alpha$-operación: $y \dot{*} z = \alpha(\alpha^{-1}(y) * \alpha^{-1}(z))$.
-	\item $\alpha$-orden: $y \dot{<} z \iff \alpha^{-1}(y) < \alpha^{-1}(z)$.
+	\item $\alpha$-orden: $y \lessdot z \iff \alpha^{-1}(y) < \alpha^{-1}(z)$.
 \end{itemize}
+\end{otherlanguage}
 
 (Donde $\dot{*}$ es la operación de la $\alpha$-aritmética y $*$ es la operación de la aritmética clásica. Nótese que la aritmética clásica no es más que una aritmética elegida arbitrariamente).
 
