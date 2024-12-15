@@ -1,0 +1,194 @@
+\section{Helpful-but-Optional Guide to read this Book.}
+
+If one just wishes to extract the bulk of this book without treating it as a puzzle or an intriguing story, the following guide might be helpful. Reading this before starting the first chapter will allow the reader to quickly skim through the first half of the book.
+
+\subsection{General procedure.}
+
+First, we define a series of ways to describe how a function varies and behaves. All of the following concepts are defined over the interval $[r, s]$.
+
+\begin{enumerate}
+	\item We define a notion of \textit{change}, both for function arguments ($\Delta_r^s x$) and for function values ($\Delta_r^s f$).
+	\item We find a set of functions which, for all intervals $[r, s]$ where $s - r = 1$, have the same change. We call them \textit{uniform} functions.
+	\item We find those functions' \textit{slope}, that is, their change on an interval of extent 1.
+	\item We define the \textit{gradient} of a function ($G_r^s f$) to be the slope of the uniform function containing the points $(r, f(r))$ and $(s, f(s))$ (for the interval $[r, s]$).
+	\item We define the \textit{derivative} of a function to be $Df = \lim\limits_{s \to r} G_r^s f$.
+	\item We define the \textit{average} of a function ($M_r^s f$).
+\end{enumerate}
+
+With this in hand, we can relate some of these quantities by the following theorems.
+
+\begin{enumerate}
+	\item The Basic Theorem. Involving the definition of average: $M_r^s (Dh) = G_r^s h$.
+	\item The Basic Problem. Given $h(r)$ and $f(x) = Dh$, find $h(s)$:
+		\begin{enumerate}
+			\item First we substitute in the Basic Theorem.
+			\item Then we solve for $h(s)$.
+		\end{enumerate}
+	\item We define the previous expression for $h(s)$ without the $h(r)$ term to be the function's integral ($\int_r^s f$).
+	\item The First Fundamental Theorem. If $g(x) = \int_r^x f$, then $Dg = f$.
+	\item The Second Fundamental Theorem. $\int_r^s (Dh) = \textrm{something}$.
+\end{enumerate}
+
+This might be an overwhelming amount of information, but after reading Chapter 1 and Chapter 2, one will find them to fit in these scheme like molten gold in a mold.
+
+\subsection{The Calculi Table.}
+
+Chapters one through four apply this scheme time and time again. If we put all the changing parts in a table, we get the following.
+
+\bgroup
+\begin{table}[H]
+\centering
+\captionsetup{labelformat=empty}
+\caption{(Table 1) The Calculi Table.}
+\def\arraystretch{2}
+
+\resizebox{1.25\linewidth}{!}{
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+				   & Classical                        & Geometrical                                     & Anageometrical                       & Bigeometrical                                               \\
+   \hline
+	$\Delta_r^s x$ & $s - r$                          & $s-r$                                           & $\frac{s}{r}$                        & $\frac{s}{r}$                                               \\
+	$\Delta_r^s f$ & $f(s)-f(r)$                      & $\frac{f(s)}{f(r)}$                             & $f(s) - f(r)$                        & $\frac{f(s)}{f(r)}$                                         \\
+	Uniform        & $mx + b$                         & $e^{mx + b}$                                    & $\ln(bx^m)$                          & $bx^m$                                                      \\
+	Slope          & $m$                              & $e^m$                                           & $m$                                  & $e^m$                                                       \\
+	$G_r^s f$ & $\frac{f(s)-f(r)}{s-r}$          & $\left(\frac{f(s)}{f(r)}\right)^\frac{1}{s-r}$  & $\frac{f(s)-f(r)}{\ln(s)-\ln(r)}$    & $\left(\frac{f(s)}{f(r)}^{\frac{1}{\ln(s)-\ln(r)}}\right)$  \\
+	$M_r^s f$      & $\frac{1}{n}\sum\limits_i^n v_i$ & $\left(\prod\limits_i^n v_i\right)^\frac{1}{n}$ &                                      &                                                             \\
+	Basic Problem  & $h(s) = h(r) + (s-r)M_r^s f$     & $h(s) = h(r) (M_r^s f)^{s-r}$                   & $h(s) = h(r)+(\ln(s)-\ln(r))M_r^s f$ & $h(s) = h(r) + (M_r^s f)^{\ln(s)-\ln(r)}$                   \\
+	Integral       & $\int_r^s f = (s-r)M_r^s f$      & $\int_r^s f = (M_r^s f)^{s-r}$                  & $\int_r^s f=(\ln(s)-\ln(r))M_r^s f$  & $(M_r^s f)^{\ln(s)-\ln(r)}$                                 \\
+	Second FTC     & $\int_r^s (Dh) = h(s) - h(r)$    & $\int_r^s (Dh) = \frac{h(s)}{h(r)}$             & $\int_r^s (Dh) = h(s) - h(r)$        & $\int_r^s (Dh) = \frac{h(s)}{h(r)}$                         \\
+	\hline
+
+\end{tabular}
+}
+\end{table}
+\egroup
+
+This table summarizes almost all of what's said in the first four chapters. Some details have been left out, so we present them now. After reading this, one will infer a kind of \textit{smell} of addition, multiplication and exponentiation intertwining together. Jump to Section \ref{general} for the next step in the guide.
+
+\subsection{Properties common to All Calculi.}
+
+Note: we only mean \enquote{classical} when explicitly saying so (if talking about anageometric calculus, consider \enquote{slope} to mean \enquote{anageometric slope}).
+
+\begin{itemize}
+	\item The derivative of a uniform function is a constant equal to its slope.
+	\item The derivative of $f$ coincides with the slope of the unique uniform function that is classically tangent to the function at point $(a, f(a))$.
+	\item The average of $f(x) = b$ with $b$ constant over an interval $[r, s]$ is $b$.
+	\item Integrals are weighted averages.
+	\item If $f(x) \le g(x) \forall x \in [r, s]$, the average and the integral of $f$ from $r$ to $s$ are less or equal to the average and the integral of $g$ from $r$ to $s$.
+	\item For each theorem in a Calculus, there exists analogous theorems on sister calculi.
+\end{itemize}
+
+\newpage
+
+\subsection{Properties common to Anageometric and Classical Calculus.}
+
+\begin{itemize}
+	\item $\int_r^s$, $D$ and $M_r^s$ are additive and homogenous ($f(a + b) = f(a) + f(b)$ and $f(c\cdot a) = c\cdot f(a)$).
+	\item The derivative of a constant is $0$.
+	\item $\int_r^r f = 0$.
+	\item Integral "joining": $\int_r^s f + \int_s^t f = \int_r^t f$.
+\end{itemize}
+
+\subsection{Properties common to Geometric and Bigeometric Calculus.}
+
+\begin{itemize}
+	\item $\int_r^s$, $D$ and $M_r^s$ are multiplicative and \enquote{exponentiative} ($h(f\cdot g) = h(f)\cdot h(g)$ and $h(f^a) = h(f)^a$).
+	\item The derivative of a constant is $1$.
+	\item $\int_r^r f = 1$.
+	\item Integral "joining": $\int_r^s f \cdot \int_s^t f = \int_r^t f$.
+\end{itemize}
+
+\subsection{Not shared properties.}
+
+If $Df = f$:
+
+\begin{itemize}
+	\item Classical: $e^x$.
+	\item Geometric: $f = e^{e^x}$.
+	\item Anageometric: $f = mx$.
+	\item Bigeometric: $f = e^x$.
+\end{itemize}
+
+The integral of $f(x) = b$ with constant $b$ over an interval $[r, s]$:
+
+\begin{itemize}
+	\item Classical: $b \cdot (s - r)$.
+	\item Geometric: $b^{s-r}$.
+	\item Anageometric: $b \cdot (\ln(s) - \ln(r))$.
+	\item Bigeometric: $b^{\ln(s) - \ln(r)}$.
+\end{itemize}
+
+Average "joining" over multiple intervals:
+
+\begin{itemize}
+	\item Classical: $M_r^s f \cdot (s - r) + M_s^t f \cdot (t - s) = M_r^t f \cdot (t - r)$.
+	\item Geometric: $(M_r^s f)^{s - r} \cdot (M_s^t f)^{t - s} = (M_r^t f)^{t - r}$.
+	\item Anageometric: $M_r^s f \cdot (\ln(s) - \ln(r)) + M_s^t f \cdot (\ln(t) - \ln(s)) = M_r^t f \cdot (\ln(t) - \ln(r))$.
+	\item Bigeometric: $(M_r^s f)^{\ln(s) - \ln(r)} \cdot (M_s^t f)^{\ln(t) - \ln(s)} = (M_r^t f)^{\ln(t) - \ln(r)}$.
+\end{itemize}
+
+Other properties:
+
+\begin{itemize}
+	\item Anageometric: a uniform function plotted on a graph where $x$ is on log-scale shows a straight line whose classical slope is the function's anageometric slope.
+	\item Bigeometric: a uniform function plotted on a graph where both axis are on log-scale shows a straight line whose classical slope is the $\ln$ of the function's bigeometric slope. 
+	\item Geometric Calculus works on functions with positive values, anageometric calculus works on functions with positive arguments, and bigeometric calculus works on functions with both positive arguments and values. An exception is made for $\ln$.
+\end{itemize}
+
+\subsection{Relationship to Classical Calculus.}
+
+Geometric:
+
+\begin{itemize}
+	\item $\tilde{G_r^s}f = \exp(G_r^s \bar{f})$.
+	\item $\tilde{D}f(a) = \exp(D\bar{f}(a))$.
+	\item $\tilde{M_r^s}f = \exp(M_r^s(\bar{f}))$.
+	\item $\tilde{\int_r^s} f = \exp(\int_r^s \bar{f})$.
+\end{itemize}
+
+Where $\bar{f}(x) = \ln(f(x))$.
+
+Anageometric:
+
+\begin{itemize}
+	\item $\underaccent{\tilde}{G}_r^s f = G_{\bar{r}}^{\bar{s}} \bar{f}$.
+	\item $\underaccent{\tilde}{D}f(a) = D\bar{f}(\bar{a})$.
+	\item $\underaccent{\tilde}{M}_r^sf = M_{\bar{r}}^{\bar{s}} \bar{f}$.
+	\item $\underaccent{\tilde}{\int}_r^s f = \int_{\bar{r}}^{\bar{s}} \bar{f}$.
+\end{itemize}
+
+Where $\bar{f} = f(e^x)$, $\bar{r} = \ln(r)$, $\bar{s} = \ln(s)$ and $\bar{a} = \ln(a)$.
+
+Bigeometric:
+
+\begin{itemize}
+	\item $\tilde{\underaccent{\tilde}{G}}_r^s f = \exp(G_{\bar{r}}^{\bar{s}} \bar{f})$.
+	\item $\tilde{\underaccent{\tilde}{D}}f(a) = \exp(D\bar{f}(\bar{a}))$.
+	\item $\tilde{\underaccent{\tilde}{M}}_r^s f = \exp(M_{\bar{r}}^{\bar{s}} \bar{f})$.
+	\item $\tilde{\underaccent{\tilde}{\int}}_r^s f = \exp(\int_{\bar{r}}^{\bar{s}} \bar{f})$.
+\end{itemize}
+
+Where $\bar{f} = \ln(f(e^x))$ and the rest are the same as before.
+
+\subsection{Generalization.} \label{general}
+
+\subsubsection{Introduction to arithmetics.}
+
+A complete ordered field (COF) over a realm (set) $A$ is the n-uple $(A, +, -, \cdot, /)$ where all field axioms are satisfied. If $A \subset \mathbb{R}$, then it's called an \textit{arithmetic}.
+
+Let $\alpha$ be a generator (injective function $\alpha: \mathbb{R} \to A$ where $A \subset \mathbb{R}$). An $\alpha$-arithmetic is the one whose realm is $A$ and which defines its operations as:
+
+\begin{itemize}
+	\item $\alpha$-operation: $y \dot{*} z = \alpha(\alpha^{-1}(y) * \alpha^{-1}(z))$.
+	\item $\alpha$-order: $y \dot{<} z \iff \alpha^{-1}(y) < \alpha^{-1}(z)$.
+\end{itemize}
+
+(Where $\dot{*}$ is the operation of the $\alpha$-arithmetic and $*$ is the operation on classical arithmetic. It must be clarified that classical arithmetic is just an arbitrarily chosen arithmetic).
+
+There are infinitely many COFs, all of them isomorphic. The relationship between arithmetics and generators is bijective. Some examples are classical arithmetic ($\alpha(x) = x$) and geometric arithmetic ($\alpha(x) = \exp(x)$).
+
+\subsubsection{Building the $\alpha$-arithmetic and the $*$-calculus.}
+
+Every concept is defined in the same way as classical arithmetics, but using the $\alpha$-operators and $\alpha$-order instead. You can get this spelled out on Section 5.3 of the book and get a particular example in Section 5.4.
+
+Finally, on Chapter 6 the final generalization of a Calculus is given. It is presented as an ordered pair of arithmetics which can be used to define all of the concepts seen thus far. This is where everything comes into place, and the reader can go \enquote{A-ha!}. We won't go into further detail in this article, as we do not wish to be neither disrespectful nor redundant to the book.
