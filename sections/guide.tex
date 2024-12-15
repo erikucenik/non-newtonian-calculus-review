@@ -1,61 +1,61 @@
-\section{Helpful-but-Optional Guide to read this Book.}
+\section{Guía útil-pero-opcional para la lectura de este Libro.}
 
-If one just wishes to extract the bulk of this book without treating it as a puzzle or an intriguing story, the following guide might be helpful. Reading this before starting the first chapter will allow the reader to quickly skim through the first half of the book.
+Si uno solo desea extraer el grueso de este libro sin tratarlo como un puzle o una historia intrigante, la siguiente guía puede resultar útil. Leer esto antes de empezar el primer capítulo permitirá al lector avanzar rápidamente por la primera mitad del libro.
 
-\subsection{General procedure.}
+\subsection{Procedimiento general.}
 
-First, we define a series of ways to describe how a function varies and behaves. All of the following concepts are defined over the interval $[r, s]$.
+Primero, definimos una serie de formas de describir cómo varía y se comporta una función. Todos los conceptos presentados a continuación se definen sobre el intervalo $[r, s]$.
 
 \begin{enumerate}
-	\item We define a notion of \textit{change}, both for function arguments ($\Delta_r^s x$) and for function values ($\Delta_r^s f$).
-	\item We find a set of functions which, for all intervals $[r, s]$ where $s - r = 1$, have the same change. We call them \textit{uniform} functions.
-	\item We find those functions' \textit{slope}, that is, their change on an interval of extent 1.
-	\item We define the \textit{gradient} of a function ($G_r^s f$) to be the slope of the uniform function containing the points $(r, f(r))$ and $(s, f(s))$ (for the interval $[r, s]$).
-	\item We define the \textit{derivative} of a function to be $Df = \lim\limits_{s \to r} G_r^s f$.
-	\item We define the \textit{average} of a function ($M_r^s f$).
+	\item Definimos una noción de \textit{cambio}, tanto para los argumentos de una función ($\Delta_r^s x$) como para los valores de esta ($\Delta_r^s f$).
+	\item Hallamos un conjunto de funciones que, para todos los intervalos donde $s - r = 1$, tengan el mismo cambio. Las llamamos \textit{funciones uniformes}.
+	\item Encontramos la \textit{pendiente} de esas funciones, esto es, su cambio en un intervalo de extensión 1.
+	\item Definimos el \textit{gradiente} de una función ($G_r^s f$) como la pendiente de la función uniforme que contiene a los puntos $(r, f(r))$ y $(s, f(s))$.
+	\item Definimos la \textit{derivada} de una función como $Df = \lim\limits_{s\to r} G_r^s f$.
+	\item Definimos la \textit{media} de una función ($M_r^s f$).	
 \end{enumerate}
 
-With this in hand, we can relate some of these quantities by the following theorems.
+Con esto en mano, podemos relacionar algunas de estas cantidades por medio de los siguientes teoremas.
 
 \begin{enumerate}
-	\item The Basic Theorem. Involving the definition of average: $M_r^s (Dh) = G_r^s h$.
-	\item The Basic Problem. Given $h(r)$ and $f(x) = Dh$, find $h(s)$:
+	\item El Teorema Básico. Involucrando la definición de media: $M_r^s (Dh) = G_r^s h$.
+	\item El Problema Básico. Dados $h(r)$ y $f(x) = Dh$, hallar $h(s)$:
 		\begin{enumerate}
-			\item First we substitute in the Basic Theorem.
-			\item Then we solve for $h(s)$.
+			\item Primero sustituímos el Teorema Básico.
+			\item Después, despejamos $h(s)$.
 		\end{enumerate}
-	\item We define the previous expression for $h(s)$ without the $h(r)$ term to be the function's integral ($\int_r^s f$).
-	\item The First Fundamental Theorem. If $g(x) = \int_r^x f$, then $Dg = f$.
-	\item The Second Fundamental Theorem. $\int_r^s (Dh) = \textrm{something}$.
+	\item Definimos la expresión anterior de $h(s)$ sin el término $h(r)$ como la \textit{integral} de la función ($\int_r^s f$).
+	\item El Primera Teorema Fundamental. Si $g(x) = \int_r^x f$, entonces $Dg = f$.
+	\item El Segundo Teorema Fundamental. $int_r^s (Dh) = \textrm{algo}$.
 \end{enumerate}
 
-This might be an overwhelming amount of information, but after reading Chapter 1 and Chapter 2, one will find them to fit in these scheme like molten gold in a mold.
+Esta cantidad de información puede resultar abrumadora, pero después de leer el Capítulo 1 y el Capítulo 2, uno observará que encajan en este esquema como oro fundido en un molde.
 
-\subsection{The Calculi Table.}
+\subsection{La Tabla de Cálculos.}
 
-Chapters one through four apply this scheme time and time again. If we put all the changing parts in a table, we get the following.
+Los capítulos del uno al cuatro aplican este esquema una y otra vez. Si ponemos todas las partes variantes en una tabla, obtenemos lo siguiente.
 
 \bgroup
 \begin{table}[H]
 \centering
 \captionsetup{labelformat=empty}
-\caption{(Table 1) The Calculi Table.}
+\caption{(Tabla 1) La Tabla de Cálculos.}
 \def\arraystretch{2}
 
 \resizebox{1.25\linewidth}{!}{
 \begin{tabular}{|c|c|c|c|c|}
 	\hline
-				   & Classical                        & Geometrical                                     & Anageometrical                       & Bigeometrical                                               \\
+				   & Clásico                          & Geométrico                                      & Anageométrico                        & Bigeométrico                                                \\
    \hline
 	$\Delta_r^s x$ & $s - r$                          & $s-r$                                           & $\frac{s}{r}$                        & $\frac{s}{r}$                                               \\
 	$\Delta_r^s f$ & $f(s)-f(r)$                      & $\frac{f(s)}{f(r)}$                             & $f(s) - f(r)$                        & $\frac{f(s)}{f(r)}$                                         \\
-	Uniform        & $mx + b$                         & $e^{mx + b}$                                    & $\ln(bx^m)$                          & $bx^m$                                                      \\
-	Slope          & $m$                              & $e^m$                                           & $m$                                  & $e^m$                                                       \\
+	Uniforme       & $mx + b$                         & $e^{mx + b}$                                    & $\ln(bx^m)$                          & $bx^m$                                                      \\
+	Pendiente      & $m$                              & $e^m$                                           & $m$                                  & $e^m$                                                       \\
 	$G_r^s f$ & $\frac{f(s)-f(r)}{s-r}$          & $\left(\frac{f(s)}{f(r)}\right)^\frac{1}{s-r}$  & $\frac{f(s)-f(r)}{\ln(s)-\ln(r)}$    & $\left(\frac{f(s)}{f(r)}^{\frac{1}{\ln(s)-\ln(r)}}\right)$  \\
 	$M_r^s f$      & $\frac{1}{n}\sum\limits_i^n v_i$ & $\left(\prod\limits_i^n v_i\right)^\frac{1}{n}$ &                                      &                                                             \\
-	Basic Problem  & $h(s) = h(r) + (s-r)M_r^s f$     & $h(s) = h(r) (M_r^s f)^{s-r}$                   & $h(s) = h(r)+(\ln(s)-\ln(r))M_r^s f$ & $h(s) = h(r) + (M_r^s f)^{\ln(s)-\ln(r)}$                   \\
+	Problema Básico& $h(s) = h(r) + (s-r)M_r^s f$     & $h(s) = h(r) (M_r^s f)^{s-r}$                   & $h(s) = h(r)+(\ln(s)-\ln(r))M_r^s f$ & $h(s) = h(r) + (M_r^s f)^{\ln(s)-\ln(r)}$                   \\
 	Integral       & $\int_r^s f = (s-r)M_r^s f$      & $\int_r^s f = (M_r^s f)^{s-r}$                  & $\int_r^s f=(\ln(s)-\ln(r))M_r^s f$  & $(M_r^s f)^{\ln(s)-\ln(r)}$                                 \\
-	Second FTC     & $\int_r^s (Dh) = h(s) - h(r)$    & $\int_r^s (Dh) = \frac{h(s)}{h(r)}$             & $\int_r^s (Dh) = h(s) - h(r)$        & $\int_r^s (Dh) = \frac{h(s)}{h(r)}$                         \\
+	Segundo TFC    & $\int_r^s (Dh) = h(s) - h(r)$    & $\int_r^s (Dh) = \frac{h(s)}{h(r)}$             & $\int_r^s (Dh) = h(s) - h(r)$        & $\int_r^s (Dh) = \frac{h(s)}{h(r)}$                         \\
 	\hline
 
 \end{tabular}
@@ -63,81 +63,81 @@ Chapters one through four apply this scheme time and time again. If we put all t
 \end{table}
 \egroup
 
-This table summarizes almost all of what's said in the first four chapters. Some details have been left out, so we present them now. After reading this, one will infer a kind of \textit{smell} of addition, multiplication and exponentiation intertwining together. Jump to Section \ref{general} for the next step in the guide.
+Esta tabla resume casi todo lo que se dice en los primeros cuatro capítulos. Algunos detalles han sido excluídos, así que los presentamos a continuación. Después de leer esto, uno deducirá cierto \textit{aroma} de la suma, la multiplicación y la exponenciación entrelanzándose entre sí. Véase la Sección \ref{general} para el siguiente paso en la guía.
 
-\subsection{Properties common to All Calculi.}
+\subsection{Propiedades comunes a todos los Cálculus.}
 
-Note: we only mean \enquote{classical} when explicitly saying so (if talking about anageometric calculus, consider \enquote{slope} to mean \enquote{anageometric slope}).
+Nota: solo nos referimos a las variantes \enquote{clásicas} cuando así especificado (si se habla de cálculo anageométrico, considérese \enquote{pendiente} como sinónimo de \enquote{pendiente anageométrica}).
 
 \begin{itemize}
-	\item The derivative of a uniform function is a constant equal to its slope.
-	\item The derivative of $f$ coincides with the slope of the unique uniform function that is classically tangent to the function at point $(a, f(a))$.
-	\item The average of $f(x) = b$ with $b$ constant over an interval $[r, s]$ is $b$.
-	\item Integrals are weighted averages.
-	\item If $f(x) \le g(x) \forall x \in [r, s]$, the average and the integral of $f$ from $r$ to $s$ are less or equal to the average and the integral of $g$ from $r$ to $s$.
-	\item For each theorem in a Calculus, there exists analogous theorems on sister calculi.
+	\item La derivada de una función uniforme es constante e igual a su pendiente.
+	\item La derivada de $f$ coincide con la pendiente de la única función uniforme que es clásicamente tangente a la función en el punto $(a, f(a))$.
+	\item La media de $f(x) = b$ con $b$ constante sobre un intervalo $[r, s]$ es $b$.
+	\item Las integrales son sumas ponderadas.
+	\item Si $f(x) \le g(x) \forall x \in [r, s]$, la media y la integral de $f$ de $r$ hasta $s$ será menor o igual a la media y la integral de $g$ de $r$ hasta $s$.
+	\item Por cada teorema en un Cálculo, existe un teorema análogo en Cálculos hermanos.
 \end{itemize}
 
 \newpage
 
-\subsection{Properties common to Anageometric and Classical Calculus.}
+\subsection{Propiedades comunes al Cálculo Anageométrico y el Clásico.}
 
-\begin{itemize}
-	\item $\int_r^s$, $D$ and $M_r^s$ are additive and homogenous ($f(a + b) = f(a) + f(b)$ and $f(c\cdot a) = c\cdot f(a)$).
-	\item The derivative of a constant is $0$.
+\begin{itemize}	
+	\item $\int_r^s$, $D$ y $M_r^s$ son aditivos y homogéneos ($f(a + b) = f(a) + f(b)$ y $f(c\cdot a) = c\cdot f(a)$).
+	\item La derivada de una constante es $0$.
 	\item $\int_r^r f = 0$.
-	\item Integral "joining": $\int_r^s f + \int_s^t f = \int_r^t f$.
+	\item \enquote{Unión} de integrales: $\int_r^s f + \int_s^t f = \int_r^t f$.
 \end{itemize}
 
-\subsection{Properties common to Geometric and Bigeometric Calculus.}
+\subsection{Propiedades comunes al Cálculo Geométrico y el Bigeométrico.}
 
 \begin{itemize}
-	\item $\int_r^s$, $D$ and $M_r^s$ are multiplicative and \enquote{exponentiative} ($h(f\cdot g) = h(f)\cdot h(g)$ and $h(f^a) = h(f)^a$).
-	\item The derivative of a constant is $1$.
+	\item $\int_r^s$, $D$ y $M_r^s$ son multiplicativos y \enquote{exponenciativos} ($h(f\cdot g) = h(f)\cdot h(g)$ y $h(f^a) = h(f)^a$).
+	\item La derivada de una constante es $1$.
 	\item $\int_r^r f = 1$.
-	\item Integral "joining": $\int_r^s f \cdot \int_s^t f = \int_r^t f$.
+	\item \enquote{Unión} de integrales: $\int_r^s f \cdot \int_s^t f = \int_r^t f$.
 \end{itemize}
 
-\subsection{Not shared properties.}
+\subsection{Propiedades no compartidas.}
 
-If $Df = f$:
+Si $Df = f$:
 
 \begin{itemize}
-	\item Classical: $e^x$.
-	\item Geometric: $f = e^{e^x}$.
-	\item Anageometric: $f = mx$.
-	\item Bigeometric: $f = e^x$.
+	\item Clásico: $e^x$.
+	\item Geométrico: $f = e^{e^x}$.
+	\item Anageométrico: $f = mx$.
+	\item Bigeométrico: $f = e^x$.
 \end{itemize}
 
-The integral of $f(x) = b$ with constant $b$ over an interval $[r, s]$:
+La integral de $f(x) = b$ con $b$ constante sobre un intervalo $[r, s]$ es:
 
 \begin{itemize}
-	\item Classical: $b \cdot (s - r)$.
-	\item Geometric: $b^{s-r}$.
-	\item Anageometric: $b \cdot (\ln(s) - \ln(r))$.
-	\item Bigeometric: $b^{\ln(s) - \ln(r)}$.
+	\item Clásico: $b \cdot (s - r)$.
+	\item Geométrico: $b^{s-r}$.
+	\item Anageométrico: $b \cdot (\ln(s) - \ln(r))$.
+	\item Bigeométrico: $b^{\ln(s) - \ln(r)}$.
 \end{itemize}
 
-Average "joining" over multiple intervals:
+\enquote{Unión} de medias sobre múltiples intervalos:
 
 \begin{itemize}
-	\item Classical: $M_r^s f \cdot (s - r) + M_s^t f \cdot (t - s) = M_r^t f \cdot (t - r)$.
-	\item Geometric: $(M_r^s f)^{s - r} \cdot (M_s^t f)^{t - s} = (M_r^t f)^{t - r}$.
-	\item Anageometric: $M_r^s f \cdot (\ln(s) - \ln(r)) + M_s^t f \cdot (\ln(t) - \ln(s)) = M_r^t f \cdot (\ln(t) - \ln(r))$.
-	\item Bigeometric: $(M_r^s f)^{\ln(s) - \ln(r)} \cdot (M_s^t f)^{\ln(t) - \ln(s)} = (M_r^t f)^{\ln(t) - \ln(r)}$.
+	\item Clásico: $M_r^s f \cdot (s - r) + M_s^t f \cdot (t - s) = M_r^t f \cdot (t - r)$.
+	\item Geométrico: $(M_r^s f)^{s - r} \cdot (M_s^t f)^{t - s} = (M_r^t f)^{t - r}$.
+	\item Anageométrico: $M_r^s f \cdot (\ln(s) - \ln(r)) + M_s^t f \cdot (\ln(t) - \ln(s)) = M_r^t f \cdot (\ln(t) - \ln(r))$.
+	\item Bigeométrico: $(M_r^s f)^{\ln(s) - \ln(r)} \cdot (M_s^t f)^{\ln(t) - \ln(s)} = (M_r^t f)^{\ln(t) - \ln(r)}$.
 \end{itemize}
 
-Other properties:
+Otras propiedades:
 
 \begin{itemize}
-	\item Anageometric: a uniform function plotted on a graph where $x$ is on log-scale shows a straight line whose classical slope is the function's anageometric slope.
-	\item Bigeometric: a uniform function plotted on a graph where both axis are on log-scale shows a straight line whose classical slope is the $\ln$ of the function's bigeometric slope. 
-	\item Geometric Calculus works on functions with positive values, anageometric calculus works on functions with positive arguments, and bigeometric calculus works on functions with both positive arguments and values. An exception is made for $\ln$.
+	\item Anageométrico: una función uniforme dibujada sobre un gráfico donde el eje $x$ está en escala logarítmica muestra una línea recta cuya pendiente clásica es la pendiente anageométrica de la función.
+	\item Bigeométrico: una función uniforme dibujada sobre un gráfico donde ambos ejes están en escala logarítmica muestra una línea recta cuya pendiente clásica es el $\ln$ de la pendiente anageométrica de la función.
+	\item El Cálculo Geométrico trabaja con funciones con valores positivos, el Cálculo Anageométrico trabaja con funciones con argumentos positivos, y el Cálculo Bigeométrico trabaja con funciones con argumentos y valores positivos. Se hace una excepción para $\ln$.
 \end{itemize}
 
-\subsection{Relationship to Classical Calculus.}
+\subsection{Relaciones con el Cálculo Clásico.}
 
-Geometric:
+Geométrico:
 
 \begin{itemize}
 	\item $\tilde{G_r^s}f = \exp(G_r^s \bar{f})$.
@@ -146,9 +146,9 @@ Geometric:
 	\item $\tilde{\int_r^s} f = \exp(\int_r^s \bar{f})$.
 \end{itemize}
 
-Where $\bar{f}(x) = \ln(f(x))$.
+Donde $\bar{f}(x) = \ln(f(x))$.
 
-Anageometric:
+Anageométrico:
 
 \begin{itemize}
 	\item $\underaccent{\tilde}{G}_r^s f = G_{\bar{r}}^{\bar{s}} \bar{f}$.
@@ -157,9 +157,9 @@ Anageometric:
 	\item $\underaccent{\tilde}{\int}_r^s f = \int_{\bar{r}}^{\bar{s}} \bar{f}$.
 \end{itemize}
 
-Where $\bar{f} = f(e^x)$, $\bar{r} = \ln(r)$, $\bar{s} = \ln(s)$ and $\bar{a} = \ln(a)$.
+Donde $\bar{f} = f(e^x)$, $\bar{r} = \ln(r)$, $\bar{s} = \ln(s)$ y $\bar{a} = \ln(a)$.
 
-Bigeometric:
+Bigeométrico:
 
 \begin{itemize}
 	\item $\tilde{\underaccent{\tilde}{G}}_r^s f = \exp(G_{\bar{r}}^{\bar{s}} \bar{f})$.
@@ -168,27 +168,27 @@ Bigeometric:
 	\item $\tilde{\underaccent{\tilde}{\int}}_r^s f = \exp(\int_{\bar{r}}^{\bar{s}} \bar{f})$.
 \end{itemize}
 
-Where $\bar{f} = \ln(f(e^x))$ and the rest are the same as before.
+Donde $\bar{f} = \ln(f(e^x))$ y el resto son iguales que en el caso anterior.
 
-\subsection{Generalization.} \label{general}
+\subsection{Generalización.} \label{general}
 
-\subsubsection{Introduction to arithmetics.}
+\subsubsection{Introducción a las aritméticas.}
 
-A complete ordered field (COF) over a realm (set) $A$ is the n-uple $(A, +, -, \cdot, /)$ where all field axioms are satisfied. If $A \subset \mathbb{R}$, then it's called an \textit{arithmetic}.
+Un cuerpo ordenado completo (CUC) sobre un conjunto $A$ es la n-upla $(A, +, -, \cdot, /)$ donde todos los axiomas de campo se cumplen. Si $A \subset \mathbb{R}$, entonces se dice que es una \textit{aritmética}.
 
-Let $\alpha$ be a generator (injective function $\alpha: \mathbb{R} \to A$ where $A \subset \mathbb{R}$). An $\alpha$-arithmetic is the one whose realm is $A$ and which defines its operations as:
+Sea $\alpha$ un generador (función inyectiva $\alpha: \mathbb{R} \to A$ donde $A \subset \mathbb{R}$). Una $\alpha$-aritmética es aquélla cuyo conjunto es $A$ y que define sus operaciones como:
 
 \begin{itemize}
-	\item $\alpha$-operation: $y \dot{*} z = \alpha(\alpha^{-1}(y) * \alpha^{-1}(z))$.
-	\item $\alpha$-order: $y \dot{<} z \iff \alpha^{-1}(y) < \alpha^{-1}(z)$.
+	\item $\alpha$-operación: $y \dot{*} z = \alpha(\alpha^{-1}(y) * \alpha^{-1}(z))$.
+	\item $\alpha$-orden: $y \dot{<} z \iff \alpha^{-1}(y) < \alpha^{-1}(z)$.
 \end{itemize}
 
-(Where $\dot{*}$ is the operation of the $\alpha$-arithmetic and $*$ is the operation on classical arithmetic. It must be clarified that classical arithmetic is just an arbitrarily chosen arithmetic).
+(Donde $\dot{*}$ es la operación de la $\alpha$-aritmética y $*$ es la operación de la aritmética clásica. Nótese que la aritmética clásica no es más que una aritmética elegida arbitrariamente).
 
-There are infinitely many COFs, all of them isomorphic. The relationship between arithmetics and generators is bijective. Some examples are classical arithmetic ($\alpha(x) = x$) and geometric arithmetic ($\alpha(x) = \exp(x)$).
+Hay infinitos CUCs, todos ellos isomórficos. La relación entre aritméticas y generadores es biyectiva. Algunos ejemplos son la aritmética clásica ($\alpha(x) = x$) y la aritmética geométrica ($\alpha(x) = \exp(x)$).
 
-\subsubsection{Building the $\alpha$-arithmetic and the $*$-calculus.}
+\subsubsection{Construyendo la $\alpha$-aritmética y el $*$-cálculo.}
 
-Every concept is defined in the same way as classical arithmetics, but using the $\alpha$-operators and $\alpha$-order instead. You can get this spelled out on Section 5.3 of the book and get a particular example in Section 5.4.
+Todos los conceptos se definen de la misma manera que en aritmética clásica, pero usando los $\alpha$-operadores y el $\alpha$-orden en su lugar. La Seccón 5.3 del libro detalla esta explicación y se ofrece un ejemplo particular en la Sección 5.4.
 
-Finally, on Chapter 6 the final generalization of a Calculus is given. It is presented as an ordered pair of arithmetics which can be used to define all of the concepts seen thus far. This is where everything comes into place, and the reader can go \enquote{A-ha!}. We won't go into further detail in this article, as we do not wish to be neither disrespectful nor redundant to the book.
+Finalmente, en el Capítulo 6 se da la última generalización de un Cálculo. Se presenta como un par ordenado de aritméticas que pueden ser usadas para definir todos los conceptos vistos hasta el momento. Aquí es donde todo se pone en su sitio, y el lector puede decir \enquote{¡Ajá!}. No entraremos en más detalle en este artículo, pues no deseamos faltar al respeto ni ser redundantes con el libro.

@@ -1,3 +1,3 @@
-# Notes and Overview on Non-Newtonian Calculus by Grossman and Katz.
+# Notas y Observación General de Non-Newtonian Calculus de Grossman y Katz.
 
-A basic overview and insight on what this book offers and a small guide to help the impatient read through it.
+Una observación general básica y reflexiones sobre lo que este libro ofrece y una pequeña guía para ayudar al impaciente a leerlo.
