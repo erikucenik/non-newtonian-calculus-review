@@ -8,9 +8,9 @@ First, we define a series of ways to describe how a function varies and behaves.
 
 \begin{enumerate}
 	\item We define a notion of \textit{change}, both for function arguments ($\Delta_r^s x$) and for function values ($\Delta_r^s f$).
-	\item We find a set of functions which, for all intervals $[r, s]$ where $s - r = 1$, have the same change. We call them \textit{uniform} functions.
-	\item We find those functions' \textit{slope}, that is, their change on an interval of extent 1.
-	\item We define the \textit{gradient} of a function ($G_r^s f$) to be the slope of the uniform function containing the points $(r, f(r))$ and $(s, f(s))$.
+	\item We find a set of functions which, when $s - r = 1$, have the same change. We call them \textit{uniform} functions.
+	\item We find those functions' \textit{slope}, that is, their change on an interval of extent $1$.
+	\item We define the \textit{gradient} of a function ($G_r^s f$) to be the slope of the unique uniform function containing the points $(r, f(r))$ and $(s, f(s))$.
 	\item We define the \textit{derivative} of a function to be $Df = \lim\limits_{s \to r} G_r^s f$.
 	\item We define the \textit{average} of a function ($M_r^s f$).
 \end{enumerate}
@@ -29,7 +29,7 @@ With this in hand, we can relate some of these quantities by the following theor
 	\item The Second Fundamental Theorem. $\int_r^s (Dh) = \textrm{something}$.
 \end{enumerate}
 
-This might be an overwhelming amount of information, but after reading Chapter 1 and Chapter 2, one will find them to fit in these scheme like molten gold in a mold.
+This might be an overwhelming amount of information, but after reading Chapter 1 and Chapter 2, one will find them to fit in these scheme like molten gold in a cast.
 
 \subsection{The Calculi Table.}
 
@@ -74,8 +74,8 @@ Note: we only mean \enquote{classical} when explicitly saying so (if talking abo
 	\item The derivative of $f$ coincides with the slope of the unique uniform function that is classically tangent to the function at point $(a, f(a))$.
 	\item The average of $f(x) = b$ with $b$ constant over an interval $[r, s]$ is $b$.
 	\item Integrals are weighted averages.
-	\item If $f(x) \le g(x) \forall x \in [r, s]$, the average and the integral of $f$ from $r$ to $s$ are less or equal to the average and the integral of $g$ from $r$ to $s$.
-	\item For each theorem in a Calculus, there exists analogous theorems on sister calculi.
+	\item If $f(x) \le g(x) \forall x \in [r, s]$, the average and the integral of $f$ from $r$ to $s$ are less or equal to the average and the integral of $g$ from $r$ to $s$, respectively.
+	\item For each theorem in a Calculus, there exists an analogous theorem on sister calculi.
 \end{itemize}
 
 \newpage
@@ -130,8 +130,8 @@ Average \enquote{joining} over multiple intervals:
 Other properties:
 
 \begin{itemize}
-	\item Anageometric: a uniform function plotted on a graph where $x$ is on log-scale shows a straight line whose classical slope is the function's anageometric slope.
-	\item Bigeometric: a uniform function plotted on a graph where both axis are on log-scale shows a straight line whose classical slope is the $\ln$ of the function's bigeometric slope. 
+	\item In Anageometric Calculus, a uniform function plotted on a graph where $x$ is on log-scale shows a straight line whose classical slope is the function's anageometric slope.
+	\item In Bigeometric Calculus, a uniform function plotted on a graph where both axis are on log-scale shows a straight line whose classical slope is the $\ln$ of the function's bigeometric slope. 
 	\item Geometric Calculus works on functions with positive values, Anageometric Calculus works on functions with positive arguments, and Bigeometric Calculus works on functions with both positive arguments and values. An exception is made for $\ln$.
 \end{itemize}
 
